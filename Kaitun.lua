@@ -15,11 +15,11 @@ getgenv().Config = {
     },
     ["Chat"] = {
         ["Enable"] = false, --// Enable Chat
-        ["Content"] = {"Hello me use MTriet Hub Auto Bounty"} --// Content
+        ["Content"] = {"Hello me use BielHub Auto Bounty"} --// Content
     },
     ["Misc"] = {
         ["Hide If Low Health"] = true, --// Run
-        ["Hide Health"] = {4000,5000}, --// Health for run
+        ["Hide Health"] = {4000,5500}, --// Health for run
         ["Lock Camera"] = true, --// Lock Cam to target
         ["FPS Boost"] = false, --// Booster FPS
         ["White Screen"] = false, --// White Screen
