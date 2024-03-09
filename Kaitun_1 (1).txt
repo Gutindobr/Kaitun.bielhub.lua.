@@ -1,0 +1,106 @@
+installing = true
+local lib = game.(https://github.com/Gutin143/Tsuo-hub-test/blob/main/Tsuo%20hub%20test/Tsuo%20hub%20test.lua)()
+local UILib = TsuoHub:Create()
+
+love.window.setMode(800, 600, {resizable=true, minwidth=800, minheight=600, highdpi=true, msaa=4, vsync=true, canvastype="opengl", title="Alienated RadiantWaterfall", minfilter="linear", magfilter="linear", srgb=true})
+love.window.setTitle("Alienated RadiantWaterfall")
+love.graphics.setDefaultFilter("nearest", "nearest")
+love.math.setRandomSeed(os.time())
+love.keyboard.setKeyRepeat(true)
+love.window.setIcon(love.image.newImageData("icon.png"))
+love.graphics.setBackgroundColor(0, 0, 0)
+
+local part = Instance.new("Part")
+part.Size = UDim2.new(0, 555, 0, 400)
+
+local MainUI = script.Parent.Parent:WaitForChild("MainUI")
+local Tab = MainUI:WaitForChild("Tab")
+local tabSize = UDim2.new(0, 555, 0, 400)
+local tabPosition = UDim2.new(0, 0, 0, 0)
+Tab:TweenSize(tabSize, "Out", "Quad", 0.5, true)
+Tab:TweenPosition(tabPosition, "Out", "Quad", 0.5, true)
+
+local MainUI = script.Parent.Parent:WaitForChild("MainUI")
+local Tab = MainUI:WaitForChild("Tab")
+local tabSize = UDim2.new(0, 555, 0, 400)
+local tabPosition = UDim2.new(0, 0, 0, 0)
+Tab:TweenSize(tabSize, "Out", "Quad", 0.5, true)
+Tab:TweenPosition(tabPosition, "Out", "Quad", 0.5, true)
+
+Name "Inicio";
+
+
+local Divider Main:Divider{
+
+getgenv().Config = {
+  ["Team"] = "Pirates", --// Marines, Pirates
+  ["Webhook"] = {
+      ["Enable"] = false, --// Enable if you have Webhook Url
+      ["Url"] = "" --// Your webhook url
+  },
+  ["Skip"] = {
+      ["V4"] = true, --// Skip V4
+      ["Fruit"] = { --// Skip Fruit
+          "Leopard-Leopard",
+          "Venom-Venom",
+          "Dough-Dough",
+          "Portal-Portal"
+      }
+  },
+  ["Chat"] = {
+      ["Enable"] = false, --// Enable Chat
+      ["Content"] = {"Hello me use Tsuo hub Auto Bounty"} --// Content
+  },
+  ["Misc"] = {
+      ["Hide If Low Health"] = true, --// Run
+      ["Hide Health"] = {4000,5000}, --// Health for run
+      ["Lock Camera"] = true, --// Lock Cam to target
+      ["FPS Boost"] = false, --// Booster FPS
+      ["White Screen"] = false, --// White Screen
+      ["Bypass TP"] = true, --// Bypass TP 1 -> 2 hit
+      ["Spam All Skill On V4"] = true, --// If you have v4, warn: change your weapon setting
+      ["Gun Method"] = false --// Enable if you use gun
+  },
+  --//  Next
+  ["Weapons"] = {
+      ["Melee"] = {
+          ["Enable"] = true,
+          ["Delay"] = 2.5,
+          ["Skills"] = {
+              ["Z"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+              ["X"] = {["Enable"] = true, ["HoldTime"] = 0.1},
+              ["C"] = {["Enable"] = true, ["HoldTime"] = 0},
+              ["V"] = {["Enable"] = false, ["HoldTime"] = 0}
+          }
+      },
+      ["Blox Fruit"] = {
+          ["Enable"] = false,
+          ["Delay"] = 3,
+          ["Skills"] = {
+              ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+              ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
+              ["C"] = {["Enable"] = true, ["HoldTime"] = 0},
+              ["V"] = {["Enable"] = true, ["HoldTime"] = 0},
+              ["F"] = {["Enable"] = false, ["HoldTime"] = 0}
+          }
+      },
+      --// Copy Next
+      ["Sword"] = {
+          ["Enable"] = true,
+          ["Delay"] = 1.5,
+          ["Skills"] = {
+              ["Z"] = {["Enable"] = true, ["HoldTime"] = 1},
+              ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
+          }
+      },
+      ["Gun"] = {
+          ["Enable"] = true,
+          ["Delay"] = 1.2,
+          ["Skills"] = {
+              ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+              ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
+          }
+      }
+  }
+}
+
