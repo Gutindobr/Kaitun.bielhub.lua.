@@ -70,4 +70,4 @@ getgenv().Config = {
     }
 }
 repeat wait() until game:IsLoaded()
-loadstring(game:HttpGet("https://github.com/Gutindobr/Kaitun.bielhub.lua..git"))()
+loadstring(game:HttpGet("https://github.com/Gutindobr/Kaitun.bielhub.lua./edit/main/Kaitun.lua"))()
